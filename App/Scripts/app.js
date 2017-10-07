@@ -5,9 +5,9 @@ angular.module('catApp', ['ngRoute','AdalAngular'])
     $routeProvider.when("/Home", {
         controller: "homeCtrl",
         templateUrl: "/App/Views/Home.html",
-    }).when("/CatList", {
-        controller: "catListCtrl",
-        templateUrl: "/App/Views/CatList.html",
+    }).when("/calculate", {
+        controller: "calculate.controller",
+        templateUrl: "/App/Views/calculate.html",
         requireADLogin: true,
     }).when("/UserData", {
         controller: "userDataCtrl",
